@@ -369,7 +369,7 @@ function home() {
 
   ${BRANDS.length ? `<section class="sec wrap">
     ${head(num(), L.linesTitle, L.linesSub, '<a class="link-more" href="#/markak">Mind →</a>')}
-    <div class="brands">${BRANDS.map(b => { const ps = P.filter(p => p.brand === b.name); return `
+    <div class="brands">${BRANDS.map(b => { const ps = P.filter(p => p.brand === b.name), li = lineCover(b); return `
       <a class="brand-card glass rv" href="#/marka/${b.k}"><span class="sec-num">${ps.length} ${L_('itemWord', 'termék')}</span><h3>${esc(b.name)}</h3><p>${esc(b.tag)}</p>
       ${li ? `<div class="brand-cover" style="background-image:url(${li})"></div>` : `<div class="imgs">${ps.slice(0, 5).map(p => `<img src="${pimg(p)}" alt="" loading="lazy">`).join('')}</div>`}</a>`; }).join('')}</div>
   </section>` : ''}
