@@ -501,8 +501,3 @@ body.rc-lux .bl-leiras { color: var(--rcT2, #d9cdb6); }
 .bl-bejarat .page-head { text-align: center; justify-items: center; margin-inline: auto; max-width: 720px; }
 .bl-bejarat .page-head p { margin-inline: auto; }
 
-/* a terem kártyáján: akik ott dolgoznak (a csapat VALÓDI portréi – generált arc soha) */
-.rc-sign-tm { display: inline-flex; align-items: center; justify-content: center; gap: 0; margin-top: 6px; font-size: 11.5px; font-weight: 600; color: var(--rcT2, #6e5d4e); font-style: normal; }
-.rc-sign-tm img, .rc-sign-tm i { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; border: 2px solid var(--rcD1, #fffaf3); box-shadow: 0 0 0 1px rgba(var(--rcA2r, 226,194,122),.7); margin-left: -7px; background: var(--rcD0, #f3eee3); font-style: normal; font-size: 10px; display: grid; place-items: center; }
-.rc-sign-tm img:first-child, .rc-sign-tm i:first-child { margin-left: 0; }
-.rc-sign-tm span { margin-left: 7px; white-space: nowrap; }
